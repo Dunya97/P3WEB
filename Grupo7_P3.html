@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Página web para vídeos">
+        <meta name="keywords" content="HTML, top, populares, videos">
+        <meta name="author" content="Sofía Bonifasi, Dunya, Belén">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index, nofollow"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <link rel= "stylesheet" href= "reset.css">
+        <link rel= "stylesheet" href= "Practica02.css">
+        <script src="Practica03.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>Video App</title>
+    </head>
+    <body>
+        <header id = "title">
+            <h1>Video App</h1>
+            <!--Este es el menú-->
+            <form class = "search" action="POST">
+                <input type = "text" placeholder="Busca tu video favorito " name="search">
+                <button type = "submit" class = "search">Buscar</button>
+            </form>
+            <nav>
+                <ul>
+                    <li class="videos"><a href="#videos">Videos </a> </li>
+                    <li class="top"><a href="#top">Top Videos </a> </li>
+                    <li class="populares"><a href="#populares">Top Populares</a> </li>
+                </ul>
+            </nav>
+        </header>
+        <!--Resultados de la búsqueda-->
+        <section>
+            <h2>Resultados de la búsqueda</h2>
+            <section class="flex">
+                <article>
+                    <figure itemscope itemtype="https://schema.org/VideoObject">
+                        <a href="https://www.youtube.com/watch?v=iWFVAIbIkS4" title="Go to video"><img itemprop="thumbnail" src="https://i.ytimg.com/vi/iWFVAIbIkS4/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLACIZCBD3j25_XUymbKzCcUmFFdow" alt="hector trailer" width="510"></a> <!--Se le agregó el link del video a la imagen-->
+                        <figcaption itemprop="description">
+                            <h3 itemprop="name">Hector and the Search For Happiness | Official Trailer</h3>
+                            <p>Hector (Simon Pegg) is a quirky psychiatrist who has become increasingly tired of his humdrum life. As he tells his girlfriend, Clara (Rosamund Pike), he feels like a fraud: he hasn't really tasted life, and yet he's offering advice to patients who are just not getting any happier. So Hector decides to break out of his deluded and routine driven life. Armed with buckets of courage and child-like curiosity, he embarks on a global quest in hopes of uncovering the elusive secret formula for true happiness. And so begins a larger than life adventure with riotously funny results. Based on the world-wide best-selling novel of the same name, Hector and the Search for Happiness is a rich, exhilarating, and hilarious tale from director Peter Chelsom, starring Simon Pegg, Toni Collette, Rosamund Pike, Stellan Skarsgard, Jean Reno and Christopher Plummer.</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure itemscope itemtype="https://schema.org/VideoObject">
+                        <a href="https://www.youtube.com/watch?v=8o8j75gI8c0" title="Go to video"><img itemprop="thumbnail" src="https://i.ytimg.com/vi/8o8j75gI8c0/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAJI4qrnzSzqsM-tHrbHIx4B-oJHg" alt="upgrade trailer" width="510"></a> <!--Se le agregó el link del video a la imagen-->
+                        <figcaption itemprop="description">
+                            <h3 itemprop="name">UPGRADE (2018) | Official Trailer</h3>
+                            <p>Set in the near-future, technology controls nearly all aspects of life. But when Grey, a self-identified technophobe, has his world turned upside down, his only hope for revenge is an experimental computer chip implant called Stem.</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure itemscope itemtype="https://schema.org/VideoObject">
+                        <a href="https://www.youtube.com/watch?v=Wl0PQ5BR4WY" title="Go to video"><img itemprop="thumbnail" src="https://i.ytimg.com/vi/Wl0PQ5BR4WY/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLB6FV5vvbeBmb8A9jOElAkfan_2fQ" alt="mamma mia 2 trailer" width="510"></a> <!--Se le agregó el link del video a la imagen-->
+                        <figcaption itemprop="description">
+                            <h3 itemprop="name">Mamma Mia 2: Here We Go Again | Official Trailer</h3>
+                            <p>Mamma Mia! Here We Go Again is an upcoming American-British-Swedish romantic comedy musical film directed and written by Ol Parker. It is a sequel to the 2008 film Mamma Mia!, which is based on the musical of the same name. The film stars Amanda Seyfried, Lily James, Christine Baranski, Julie Walters, Pierce Brosnan, Colin Firth, Stellan Skarsgård, Dominic Cooper, Andy Garcia, Cher, and Meryl Streep.</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure itemscope itemtype="https://schema.org/VideoObject">
+                        <a href="https://www.youtube.com/watch?v=HusPt_1-qto" title="Go to video"><img itemprop="thumbnail" src="https://i.ytimg.com/vi/HusPt_1-qto/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBeSCjsgBU-Bp_Y3Qpx7JjBLZ9npg" alt="den of thieves" width="510"></a> <!--Se le agregó el link del video a la imagen-->
+                        <figcaption itemprop="description">
+                            <h3 itemprop="name">Den of Thieves | Official Trailer</h3>
+                            <p>DEN OF THIEVES is a gritty Los Angeles crime saga which follows the intersecting and often personally connected lives of an elite unit of the LA County Sheriff's Dept. and the state's most successful bank robbery crew as the outlaws plan a seemingly impossible heist on the Federal Reserve Bank of downtown Los Angeles. </p>
+                        </figcaption>
+                    </figure>
+                </article>
+            </section>
+            <h3 class="subir"><a href="#title">Subir</a></h3>
+        </section>
+        <!--Videos-->
+        <section>
+            <h2 id = "videos">Videos</h2>
+            <section class="flex">
+                <article>
+                    <figure itemscope itemtype="https://schema.org/VideoObject">                   
+                        <a href="https://www.youtube.com/watch?v=419mibN54H8" title="Go to video"><img itemprop="thumbnail" src="https://i.ytimg.com/vi/419mibN54H8/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAnvoMQbfbgTcu_gMpNVJkQupoE8Q" alt="disney mistakes" width="510"></a> <!--Se le agregó el link del video a la imagen-->
+                        <figcaption itemprop="description">
+                            <h3 itemprop="name">10 Times Disney Made HUGE Mistakes</h3>
+                            <p>Disney has mastered the art of storytelling by captivating audiences through its narrative for generations. Audiences have adored Disney movies for their love stories, friendships, music, and animation. Nevertheless, Disney is not immune to mistakes as we’ll see today as we go through 10 Times Disney Make HUGE Mistakes.</p>
+                            <p>Noticing a small mistake in a movie can really take away from its magical qualities! “The Emperor’s New Groove” has its setting mixed up while “The Lion King” didn’t do the best research when it came to Africa’s biodiversity. Turns out “Hercules” is much more fiction than myth! Meanwhile, “Frozen” includes an appearing sword with no explanation, Cinderella has a secret outfit change, and Aladdin is missing body parts! Some of our favorite Disney movies have mistakes that are impossible to ignore once you know about them! Watch until the end to see why several mistakes are offensive in “Pocahontas.”</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure itemscope itemtype="https://schema.org/VideoObject">
+                        <a href="https://www.youtube.com/watch?v=Ee2lH2jGmJM" title="Go to video"><img itemprop="thumbnail" src="https://i.ytimg.com/vi/Ee2lH2jGmJM/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAPebZaZrL5I6RKYWdc51-p6r3jkw" alt="princess connections" width="510"></a> <!--Se le agregó el link del video a la imagen-->
+                        <figcaption itemprop="description">
+                            <h3 itemprop="name">10 Disney Princess Connections That Will Make Your Jaw Drop</h3>
+                            <p>We all know that Disney likes to give us connections to their other films, and when watching them we like to look to for them, so today at Screen Rant, we’re taking a look at ten Disney Princess connections that you wouldn’t expect. </p>
+                            <p>We take a look at how Disney re-used idea’s that had been in the initial drafts of Snow White in Sleeping Beauty almost a decade later, such as the prince having to face off against the witch. And on the subject of Snow White, we take a look at the theory that Tangled’s Mother Gothel is actually the Evil Queen.</p>
+                            <p>Disney also like connecting their films via storybooks, with both Beauty and the Beast and The Princess and the Frog using storybooks to show what film was coming next, which were Aladdin and Tangled, and how Tangled features a few past gems in the books on the floor.</p>
+                            <p>As well as books, other objects are used to make connections. The Magic Carpet from Aladdin is found in a few other films, including The Princess and the Frog, The Hunchback of Notre Dame, and Moana. Also, had you ever noticed that the only princesses to wear gloves are those who married into royalty.</p>
+                            <p>We also get into the big one, about how Rapunzel, Elsa and Anna are actually cousins, and about how their parents died on the way to Rapunzel and Flynn’s wedding, and we extend it a little into how the shipwreck explored by Ariel, was actually that of their parents.</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure itemscope itemtype="https://schema.org/VideoObject">
+                        <a href="https://www.youtube.com/watch?v=cnBrkS323Po" title="Go to video"><img itemprop="thumbnail" src="https://i.ytimg.com/vi/cnBrkS323Po/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLD1FKOL95QOEdBovmAYs42gntciQA" alt="minions" width="510"></a> <!--Se le agregó el link del video a la imagen-->
+                        <figcaption itemprop="description">
+                            <h3 itemprop="name">10 Shocking Facts You Didn't Know About The Minions</h3>
+                            <p>The Minions are everywhere these days, thanks to the success of the Despicable Me films and their own solo adventure which hit theatres in 2016. But despite how popular they are, what do audiences really know about them? Aside from the obvious, there’s actually a whole bunch of information out there. For instance, the original minions were designed in part with the Jawas from Star Wars and the Oompa Loompas from Willy Wonka in mind. But that was after they decided to scrap the orc design. Yup, Minions were originally going to look more like an orc out of Warcraft or the Lord of the Rings films. The Minions have their own evil counterparts too, who are quite literally on the other side of the color spectrum. Unlike original Minions, which evolved over time from a single celled organism, the purple minions were engineered to do their minion duties without fail. Oh, and be bad guys while they’re at it. There are actually 10400 different minions on the poster for Despicable Me 2, all of them unique. That’s a lot of unique variations. But the method behind making them is actually pretty easy thanks to the help of some pre-determined templates. That’s why some Minions look so alike but in actuality, none of them are 100% the same. Oh-and the Minions can actually survive in space. Apparently, their antics would put them in so much harm that they needed to ensure the survival of their species, even in the vacuum of space.</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure itemscope itemtype="https://schema.org/VideoObject">
+                        <a href="https://www.youtube.com/watch?v=iy77e5_uNyk" title="Go to video"><img itemprop="thumbnail" src="https://i.ytimg.com/vi/JQdtFUjMBHg/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBld_MZ4VCi0ezfwdrjdPL8uJLj3A" alt="fan theories" width="510"></a> <!--Se le agregó el link del video a la imagen-->
+                        <figcaption itemprop="description">
+                            <h3 itemprop = "name">25 Nickelodeon Fan Theories That Will Ruin Your Childhood</h3>
+                            <p>Everyone loves a good Nick show. Whether you grew up watching, enjoy current programming, or have gone back to see the classics, a great Nicktoon is truly enjoyable. With hours and hours of Nick content, fans of the show have had plenty of time to come up with some pretty crazy theories over the years. Watch to see theories based on your favorite Nick shows including SpongeBob Squarepants, the Rugrats, and iCarly.</p>
+                            <p>The show Drake and Josh helped launch TeenNick and is still really popular in re-runs today. But was the show actually a reality show set within the Nick universe?! Drake and Josh also featured a character known as Crazy Steve. He may have actually kidnapped Carly and brought her to Seattle, Washington. Speaking of iCarly, Freddie Benson never had a father on the show, but could his father actually have been a bee from the Bee Movie?! SpongeBob Squarepants has many different theories including ones about the origin of the Krusty Krab, the way Bikini Bottom formed, and connections to the seven deadly sins. Rocko’s Modern Life may have set out to be the most perverted show in Nickelodeon history. Was Chuckie’s real mom someone other than the one they showed and how would she connect to Tommy?! Are the Rugrats even real? The widespread theory is easily debunked, but pretty fun to think about. Blue’s Clues is filled with a number of different theories including ones about the character’s intentions and some possible drug problems. Watch to see all the crazy theories related to your favorite Nick shows of all-time!</p>
+                        </figcaption>
+                    </figure>
+                </article>
+            </section>
+            <h3 class="subir"><a href="#title">Subir</a></h3>
+        </section>
+        <!--Top Videos-->
+        <section>
+            <h2 id = "top">Top Videos</h2>
+            <section class="flex">
+                <article>
+                    <figure itemscope itemtype="https://schema.org/VideoObject">
+                        <a href="https://www.youtube.com/watch?v=arj7oStGLkU" title="Go to video"><img itemprop="thumbnail" src="https://i.ytimg.com/vi/arj7oStGLkU/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCbSb9BGTVoWp1V7-PzQ7rm61HQVw" alt="procrastinator" width="510"></a> <!--Se le agregó el link del video a la imagen-->
+                        <figcaption itemprop="description">
+                            <h3 itemprop="name">Inside the mind of a master procrastinator | Tim Urban</h3>
+                            <p>Tim Urban knows that procrastination doesn't make sense, but he's never been able to shake his habit of waiting until the last minute to get things done. In this hilarious and insightful talk, Urban takes us on a journey through YouTube binges, Wikipedia rabbit holes and bouts of staring out the window -- and encourages us to think harder about what we're really procrastinating on, before we run out of time.</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure itemscope itemtype="https://schema.org/VideoObject">
+                        <a href="https://www.youtube.com/watch?v=deG_LTcAjaM" title="Go to video"><img itemprop="thumbnail" src="https://i.ytimg.com/vi/deG_LTcAjaM/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLD9yPNt24pL9HxhvGPtURBUty_Thg" alt="9/11" width="510"></a> <!--Se le agregó el link del video a la imagen-->
+                        <figcaption itemprop="description">
+                            <h3 itemprop="name">Did the global response to 9/11 make us safer? | Benedetta Berti</h3>
+                            <p>If we want sustainable, long-term security to be the norm in the world, it's time to radically rethink how we can achieve it, says TED Fellow and conflict researcher Benedetta Berti. In an eye-opening talk, Berti explains how building a safer world has a lot less to do with crushing enemies on the battlefield and a lot more to do with protecting civilians -- no matter where they're from or where they live.</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure itemscope itemtype="https://schema.org/VideoObject">
+                        <a href="https://www.youtube.com/watch?v=QMcwDmHiUZ8" title="Go to video"><img itemprop="thumbnail" src="https://i.ytimg.com/vi/QMcwDmHiUZ8/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLC5Wvm6JiWFu9l6poEUhmvRFnEjzA" alt="health care" width="510"></a> <!--Se le agregó el link del video a la imagen-->
+                        <figcaption itemprop="description">
+                            <h3 itemprop="name">A new way to fund health care for the most vulnerable | Andrew Bastawrous</h3>
+                            <p>In 2011, eye surgeon and TED Fellow Andrew Bastawrous developed a smartphone app that brings quality eye care to remote communities, helping people avoid losing their sight to curable or preventable conditions. Along the way, he noticed a problem: strict funding regulations meant that he could only operate on people with specific diseases, leaving many others without resources for treatment. In this passionate talk, Bastawrous calls for a new health care funding model that's flexible and ambitious -- to deliver better health to everyone, whatever their needs are.</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure itemscope itemtype="https://schema.org/VideoObject">
+                        <a href="https://www.youtube.com/watch?v=FEeTLopLkEo" title="Go to video"><img itemprop="thumbnail" src="https://i.ytimg.com/vi/FEeTLopLkEo/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLClSAWdR7ZirPlosX3k-boJqLkwwA" alt="female engineers" width="510"></a> <!--Se le agregó el link del video a la imagen-->
+                        <figcaption itemprop="description">
+                            <h3 itemprop="name">Inspiring the next generation of female engineers | Debbie Sterling</h3>
+                            <p>Close your eyes and picture and engineer. You probably weren't envisioning Debbie Sterling.  Debbie Sterling is an engineer and founder of GoldieBlox, a toy company out to inspire the next generation of female engineers. She has made it her mission in life to tackle the gender gap in science, technology, engineering and math.</p>
+                        </figcaption>
+                    </figure>
+                </article>  
+            </section>
+            <h3 class="subir"><a href="#title">Subir</a></h3>
+        </section>
+        <!--Top Populares-->
+        <section>
+            <h2 id = "populares">Top Populares</h2>
+            <section class="flex">
+                <article>
+                    <figure itemscope itemtype="https://schema.org/VideoObject">
+                        <a href="https://www.youtube.com/watch?v=8jPQjjsBbIc" title="Go to video"><img itemprop="thumbnail" src="https://i.ytimg.com/vi/8jPQjjsBbIc/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDdFPYicErnlk182Jx1GTSER6uNyg" alt="calm" width="510"></a> <!--Se le agregó el link del video a la imagen-->
+                        <figcaption itemprop="description">
+                            <h3 itemprop="name">How to stay calm when you know you'll be stressed | Daniel Levitin</h3>
+                            <p>You're not at your best when you're stressed. In fact, your brain has evolved over millennia to release cortisol in stressful situations, inhibiting rational, logical thinking but potentially helping you survive, say, being attacked by a lion. Neuroscientist Daniel Levitin thinks there's a way to avoid making critical mistakes in stressful situations, when your thinking becomes clouded — the pre-mortem. "We all are going to fail now and then," he says. "The idea is to think ahead to what those failures might be."</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure itemscope itemtype="https://schema.org/VideoObject">
+                        <a href="https://www.youtube.com/watch?v=7sxpKhIbr0E" title="Go to video"><img itemprop="thumbnail" src="https://i.ytimg.com/vi/7sxpKhIbr0E/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLD4HOuwpAdYYXGORy2i75wy26VGLw" alt="self-motivation" width="510"></a> <!--Se le agregó el link del video a la imagen-->
+                        <figcaption itemprop="description">
+                            <h3 itemprop="name">The psychology of self-motivation | Scott Geller</h3>
+                            <p>Scott Geller is Alumni Distinguished Professor at Virginia Tech and Director of the Center for Applied Behavior Systems in the Department of Psychology. He is a Fellow of the American Psychological Association, the Association for Psychological Science, and the World Academy of Productivity and Quality. He has written numerous articles and books, including When No One's Watching: Living and Leading Self-motivation. Scott will examine how we can become self-motivated in "The Psychology of Self-Motivation."</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure itemscope itemtype="https://schema.org/VideoObject">
+                        <a href="https://www.youtube.com/watch?v=RKK7wGAYP6k" title="Go to video"><img itemprop="thumbnail" src="https://i.ytimg.com/vi/RKK7wGAYP6k/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBzhJvH09UUbzM2_6IHw-0vtZDf0A" alt="languages" width="510"></a> <!--Se le agregó el link del video a la imagen-->
+                        <figcaption itemprop="description">
+                            <h3 itemprop="name">How language shapes the way we think | Lera Boroditsky</h3>
+                            <p>There are about 7,000 languages spoken around the world -- and they all have different sounds, vocabularies and structures. But do they shape the way we think? Cognitive scientist Lera Boroditsky shares examples of language -- from an Aboriginal community in Australia that uses cardinal directions instead of left and right to the multiple words for blue in Russian -- that suggest the answer is a resounding yes. "The beauty of linguistic diversity is that it reveals to us just how ingenious and how flexible the human mind is," Boroditsky says. "Human minds have invented not one cognitive universe, but 7,000."</p>
+                        </figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure itemscope itemtype="https://schema.org/VideoObject">
+                        <a href="https://www.youtube.com/watch?v=R1vskiVDwl4" title="Go to video"><img itemprop= "thumbanil" src="https://i.ytimg.com/vi/R1vskiVDwl4/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCiGNth8Tv-us_xIdSo9CHjfobQ6w" alt="conversation" width="510"></a> <!--Se le agregó el link del video a la imagen-->
+                        <figcaption itemprop="description">
+                            <h3 itemprop="name">10 ways to have a better conversation | Celeste Headlee</h3>
+                            <p>When your job hinges on how well you talk to people, you learn a lot about how to have conversations — and that most of us don't converse very well. Celeste Headlee has worked as a radio host for decades, and she knows the ingredients of a great conversation: Honesty, brevity, clarity and a healthy amount of listening. In this insightful talk, she shares 10 useful rules for having better conversations. "Go out, talk to people, listen to people," she says. "And, most importantly, be prepared to be amazed."</p>
+                        </figcaption>
+                    </figure>
+                </article>
+            </section>
+            <h3 class="subir"><a href="#title">Subir</a></h3>
+        </section> 
+        <br>
+        <br>
+        <footer>
+            <h4>Creado por Sofía Bonifasi, Dunya Mohamed y Belén Canals para Proyectos Web I - 2018/2019</h4>
+        </footer>   
+    </body>
+</html>
