@@ -9,9 +9,10 @@
         <meta name="robots" content="index, nofollow"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         
+        <script src="Grupo7_P3.js"></script>
         <link rel= "stylesheet" href= "reset.css">
         <link rel= "stylesheet" href= "Grupo7_P3.css">
-        <script src="Grupo7_P3.js"></script>
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <title>Video App</title>
@@ -20,9 +21,9 @@
         <header id = "title">
             <h1>Video App</h1>
             <!--Este es el menú-->
-            <form class = "search" action="POST">
-                <input type = "text" placeholder="Busca tu video favorito " name="search">
-                <button type = "submit" class = "search">Buscar</button>
+            <form class = "search">
+                <input type = "text" id = "searchInput" placeholder="Busca tu video favorito " name="search">
+                <button type="submit" id="search" class="search">Buscar</button>
             </form>
             <nav>
                 <ul>
@@ -33,46 +34,10 @@
             </nav>
         </header>
         <!--Resultados de la búsqueda-->
-        <section>
-            <h2>Resultados de la búsqueda</h2>
-            <section class="flex">
-                <article>
-                    <figure itemscope itemtype="https://schema.org/VideoObject">
-                        <a href="https://www.youtube.com/watch?v=iWFVAIbIkS4" title="Go to video"><img itemprop="thumbnail" src="https://i.ytimg.com/vi/iWFVAIbIkS4/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLACIZCBD3j25_XUymbKzCcUmFFdow" alt="hector trailer" width="510"></a> <!--Se le agregó el link del video a la imagen-->
-                        <figcaption itemprop="description">
-                            <h3 itemprop="name">Hector and the Search For Happiness | Official Trailer</h3>
-                            <p>Hector (Simon Pegg) is a quirky psychiatrist who has become increasingly tired of his humdrum life. As he tells his girlfriend, Clara (Rosamund Pike), he feels like a fraud: he hasn't really tasted life, and yet he's offering advice to patients who are just not getting any happier. So Hector decides to break out of his deluded and routine driven life. Armed with buckets of courage and child-like curiosity, he embarks on a global quest in hopes of uncovering the elusive secret formula for true happiness. And so begins a larger than life adventure with riotously funny results. Based on the world-wide best-selling novel of the same name, Hector and the Search for Happiness is a rich, exhilarating, and hilarious tale from director Peter Chelsom, starring Simon Pegg, Toni Collette, Rosamund Pike, Stellan Skarsgard, Jean Reno and Christopher Plummer.</p>
-                        </figcaption>
-                    </figure>
-                </article>
-                <article>
-                    <figure itemscope itemtype="https://schema.org/VideoObject">
-                        <a href="https://www.youtube.com/watch?v=8o8j75gI8c0" title="Go to video"><img itemprop="thumbnail" src="https://i.ytimg.com/vi/8o8j75gI8c0/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAJI4qrnzSzqsM-tHrbHIx4B-oJHg" alt="upgrade trailer" width="510"></a> <!--Se le agregó el link del video a la imagen-->
-                        <figcaption itemprop="description">
-                            <h3 itemprop="name">UPGRADE (2018) | Official Trailer</h3>
-                            <p>Set in the near-future, technology controls nearly all aspects of life. But when Grey, a self-identified technophobe, has his world turned upside down, his only hope for revenge is an experimental computer chip implant called Stem.</p>
-                        </figcaption>
-                    </figure>
-                </article>
-                <article>
-                    <figure itemscope itemtype="https://schema.org/VideoObject">
-                        <a href="https://www.youtube.com/watch?v=Wl0PQ5BR4WY" title="Go to video"><img itemprop="thumbnail" src="https://i.ytimg.com/vi/Wl0PQ5BR4WY/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLB6FV5vvbeBmb8A9jOElAkfan_2fQ" alt="mamma mia 2 trailer" width="510"></a> <!--Se le agregó el link del video a la imagen-->
-                        <figcaption itemprop="description">
-                            <h3 itemprop="name">Mamma Mia 2: Here We Go Again | Official Trailer</h3>
-                            <p>Mamma Mia! Here We Go Again is an upcoming American-British-Swedish romantic comedy musical film directed and written by Ol Parker. It is a sequel to the 2008 film Mamma Mia!, which is based on the musical of the same name. The film stars Amanda Seyfried, Lily James, Christine Baranski, Julie Walters, Pierce Brosnan, Colin Firth, Stellan Skarsgård, Dominic Cooper, Andy Garcia, Cher, and Meryl Streep.</p>
-                        </figcaption>
-                    </figure>
-                </article>
-                <article>
-                    <figure itemscope itemtype="https://schema.org/VideoObject">
-                        <a href="https://www.youtube.com/watch?v=HusPt_1-qto" title="Go to video"><img itemprop="thumbnail" src="https://i.ytimg.com/vi/HusPt_1-qto/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBeSCjsgBU-Bp_Y3Qpx7JjBLZ9npg" alt="den of thieves" width="510"></a> <!--Se le agregó el link del video a la imagen-->
-                        <figcaption itemprop="description">
-                            <h3 itemprop="name">Den of Thieves | Official Trailer</h3>
-                            <p>DEN OF THIEVES is a gritty Los Angeles crime saga which follows the intersecting and often personally connected lives of an elite unit of the LA County Sheriff's Dept. and the state's most successful bank robbery crew as the outlaws plan a seemingly impossible heist on the Federal Reserve Bank of downtown Los Angeles. </p>
-                        </figcaption>
-                    </figure>
-                </article>
-            </section>
+        <section id = "firstSection">
+            <h2 id="resultados">Resultados de la búsqueda</h2>
+                <section id= "results" class="flex">
+                </section>
             <h3 class="subir"><a href="#title">Subir</a></h3>
         </section>
         <!--Videos-->
@@ -81,7 +46,7 @@
             <section class="flex">
                 <article>
                     <figure itemscope itemtype="https://schema.org/VideoObject">                   
-                        <a href="https://www.youtube.com/watch?v=419mibN54H8" title="Go to video"><img itemprop="thumbnail" src="https://i.ytimg.com/vi/419mibN54H8/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAnvoMQbfbgTcu_gMpNVJkQupoE8Q" alt="disney mistakes" width="510"></a> <!--Se le agregó el link del video a la imagen-->
+                        <a href="https://www.youtube.com/watch?v=419mibN54H8" title="Go to video"><img itemprop="thumbnail" src='https://i.ytimg.com/vi/419mibN54H8/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&amp;rs=AOn4CLAnvoMQbfbgTcu_gMpNVJkQupoE8Q' alt="disney mistakes" width="510"></a> <!--Se le agregó el link del video a la imagen-->
                         <figcaption itemprop="description">
                             <h3 itemprop="name">10 Times Disney Made HUGE Mistakes</h3>
                             <p>Disney has mastered the art of storytelling by captivating audiences through its narrative for generations. Audiences have adored Disney movies for their love stories, friendships, music, and animation. Nevertheless, Disney is not immune to mistakes as we’ll see today as we go through 10 Times Disney Make HUGE Mistakes.</p>
