@@ -177,7 +177,7 @@ section.flex {
 
 img {
   width: 100%;
-  height: auto;
+  height: 167px;
   margin: 5px auto;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
@@ -199,6 +199,7 @@ figcaption {
           box-shadow: inset 0px 50px 5px 4px #666666;
   background-color: transparent;
   text-align: justify;
+  font-size: 75%
 }
 
 h3.subir {
