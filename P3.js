@@ -2,7 +2,7 @@ let arrayVideos = [];
 
 window.onload = function() {
     addVideosArray();
-    showVideos();
+    //showVideos();
     const button = document.getElementById("search");
     Listener.add(button, "click", Listener.eventSearch, true);
 };
@@ -100,7 +100,7 @@ function addVideosArray() {
     }
 }
 
-/*"use strict";
+"use strict";
 
 function r(f){/in/.test(document.readyState)?setTimeout('r('+f+')',9):f()}
 
@@ -130,7 +130,7 @@ r(function(){
             this.parentNode.replaceChild(iframe, this);
         }
     }
-});*/
+});
 
 function showVideos() {
     for(var i = 0; i < arrayVideos.length; i++) {
